@@ -58,8 +58,8 @@ namespace SOHNE.Accessibility.Colorblindness
             Debug.LogError("There is no type of <b>SRP</b> included in this project.");
 #endif
 
-#endif
         }
+#endif
 
         void Awake()
         {
