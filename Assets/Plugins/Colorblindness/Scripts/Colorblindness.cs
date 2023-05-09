@@ -49,11 +49,15 @@ namespace SOHNE.Accessibility.Colorblindness
 
         public static Colorblindness Instance { get; private set; }
 
+#if UNITY_ENGINE
+
         [UnityEditor.Callbacks.DidReloadScripts]
         private static void OnScriptsReloaded()
         {
 #if !RENDERPIPELINE
             Debug.LogError("There is no type of <b>SRP</b> included in this project.");
+#endif
+
 #endif
         }
 
